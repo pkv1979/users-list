@@ -1,12 +1,3 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 <style>
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -375,7 +366,7 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>{{ title }} - приложение работает!</span>
 
     <svg
       id="rocket-smoke"
@@ -395,8 +386,7 @@
     </svg>
   </div>
 
-  <!-- Users List -->
-  <h2>Users List App</h2>
+  <!-- <h2>Приложение - "{{ title }}"</h2>
 
   <mat-selection-list #shoes>
     <mat-list-option *ngFor="let shoe of typesOfShoes">
@@ -404,7 +394,9 @@
     </mat-list-option>
   </mat-selection-list>
 
-  <p>Option selected: {{ shoes.selectedOptions.selected.length }}</p>
+  <p>Option selected: {{ shoes.selectedOptions.selected.length }}</p> -->
+
+  <app-users-list></app-users-list>
 </div>
 
 <router-outlet></router-outlet>
