@@ -118,4 +118,14 @@ export class UsersService {
       (a, b) => direction * (a.username > b.username ? 1 : -1)
     );
   }
+
+  addUser(user: User) {
+    this.usersList.unshift(user);
+  }
+
+  deleteUsers(users: User[]) {
+    users.forEach((user) => {
+      this.usersList = this.usersList.filter((item) => item.id !== user.id);
+    });
+  }
 }
